@@ -1,0 +1,21 @@
+.Header {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: relative;
+
+    &-menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    &-menuitem {
+        display: inline-block;
+    }
+
+    &-menulink {
+        margin: 0 1rem;
+        text-transform: capitalize;
+    }
+}

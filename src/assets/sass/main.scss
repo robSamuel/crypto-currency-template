@@ -1,0 +1,12 @@
+//External Styles
+
+//Base Styles
+@import "./base/fonts.scss";
+@import "./base/variables.scss";
+@import "./base/common.scss";
+
+//Pages
+@import "./pages/home/home.scss";
+
+//Components
+@import "./components/header/header.scss";
