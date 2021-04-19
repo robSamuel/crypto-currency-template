@@ -1,5 +1,6 @@
 .Header {
     align-items: center;
+    background-color: $gray;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
@@ -15,6 +16,7 @@
     }
 
     &-menulink {
+        color: $white;
         margin: 0 1rem;
         text-transform: capitalize;
     }

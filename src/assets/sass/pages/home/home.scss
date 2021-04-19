@@ -1,5 +1,9 @@
 .Home {
     &-introduction {
-        
+        background-image: url("/assets/images/introduction-background.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 750px;
+        width: 100%;
     }
 }
