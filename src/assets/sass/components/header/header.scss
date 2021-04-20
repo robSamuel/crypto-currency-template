@@ -6,6 +6,11 @@
     padding: 1rem;
     position: relative;
 
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+
     &-logo {
         color: $white;
         font-size: 20px;
@@ -15,6 +20,7 @@
 
     &-content {
         display: flex;
+        align-items: center;
         justify-content: flex-end;
         width: 100%;
     }

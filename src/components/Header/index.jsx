@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import CustomButton from '../Button';
 import { Link } from 'react-router-dom';
 
 const MENU_ITEMS = [
@@ -58,7 +59,7 @@ const Header = props => {
 
     return (
         <header className="Header">
-            <div className="container">
+            <div className="container Header-container">
                 <Link
                     className="Header-logo"
                     to="/"
@@ -69,6 +70,10 @@ const Header = props => {
                     <ul className="Header-menu">
                         {renderMenuItems()}
                     </ul>
+                    <CustomButton
+                        classes="margin-left-10"
+                        text="Buy Token"
+                    />
                 </div>
             </div>
         </header>
