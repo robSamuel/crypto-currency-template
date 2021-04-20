@@ -35,8 +35,18 @@
     }
 
     &-menulink {
-        color: $white;
+        color: $white !important;
+        font-size: 15px;
         margin: 0 1rem;
         text-transform: capitalize;
+    }
+
+    &-token {
+        margin-left: 10px;
+        max-width: 105px;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
     }
 }

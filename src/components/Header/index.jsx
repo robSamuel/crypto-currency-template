@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import CustomButton from '../Button';
 import { Link } from 'react-router-dom';
+import {
+    Collapse,
+    Nav,
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    NavItem,
+    NavLink
+} from 'reactstrap';
 
 const MENU_ITEMS = [
     {
@@ -39,45 +48,85 @@ const MENU_ITEMS = [
 ];
 
 const Header = props => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(prevIsOpen => {
+            return !prevIsOpen;
+        });
+    };
+
     const renderMenuItems = () => {
         return MENU_ITEMS.map(item => {
             return (
-                <li
+                <NavItem
                     className="Header-menuitem"
                     key={uuidv4()}
                 >
-                    <Link
+                    <NavLink
                         className="Header-menulink"
-                        to={item.link}
+                        href={item.link}
                     >
                         {item.title}
-                    </Link>
-                </li>
+                    </NavLink>
+                </NavItem>
             );
         });
     };
 
+    // return (
+    //     <header className="Header">
+    //         <div className="container Header-container">
+    //             <Link
+    //                 className="Header-logo"
+    //                 to="/"
+    //             >
+    //                 Nafi
+    //             </Link>
+    //             <div className="Header-content">
+    //                 <ul className="Header-menu">
+    //                     {renderMenuItems()}
+    //                 </ul>
+    //                 <CustomButton
+    //                     classes="margin-left-10"
+    //                     text="Buy Token"
+    //                 />
+    //             </div>
+    //         </div>
+    //     </header>
+    // );
+
     return (
         <header className="Header">
-            <div className="container Header-container">
-                <Link
-                    className="Header-logo"
-                    to="/"
-                >
-                    Nafi
-                </Link>
-                <div className="Header-content">
-                    <ul className="Header-menu">
-                        {renderMenuItems()}
-                    </ul>
+            <div className="container">
+                <Navbar dark expand="lg">
+                    <NavbarBrand>
+                        <Link
+                            className="Header-logo"
+                            to="/"
+                        >
+                            Nafi
+                        </Link>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={toggle} className="mr-2" />
+                    <Collapse
+                        className="justify-content-end"
+                        isOpen={isOpen}
+                        navbar
+                    >
+                        <Nav navbar>
+                            {renderMenuItems()}
+                            
+                        </Nav>
+                    </Collapse>
                     <CustomButton
-                        classes="margin-left-10"
+                        classes="Header-token"
                         text="Buy Token"
                     />
-                </div>
+                </Navbar>
             </div>
         </header>
-    );
+    )
 };
 
 export default Header;
