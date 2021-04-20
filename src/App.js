@@ -25,11 +25,11 @@ const App = () => {
               {getRoutes()}
             </div>
             <Helmet>
-            <script
-                src="https://kit.fontawesome.com/87131fda1b.js"
-                crossorigin="anonymous"
-            />
-      </Helmet>
+                <script
+                    src="https://kit.fontawesome.com/87131fda1b.js"
+                    crossorigin="anonymous"
+                />
+            </Helmet>
         </BrowserRouter>
     );
 }
