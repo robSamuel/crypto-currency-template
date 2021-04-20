@@ -1,12 +1,12 @@
 //External Styles
+@import "./vendor/bootstrap.scss";
 
 //Base Styles
-@import "./base/fonts.scss";
-@import "./base/variables.scss";
-@import "./base/common.scss";
+@import "./base/base.scss";
 
 //Pages
 @import "./pages/home/home.scss";
 
 //Components
+@import "./components/button/button.scss";
 @import "./components/header/header.scss";

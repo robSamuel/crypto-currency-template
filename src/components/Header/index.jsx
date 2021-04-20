@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 
@@ -59,18 +58,21 @@ const Header = props => {
 
     return (
         <header className="Header">
-            <div className="Header-logo">
-
+            <div className="container">
+                <Link
+                    className="Header-logo"
+                    to="/"
+                >
+                    Nafi
+                </Link>
+                <div className="Header-content">
+                    <ul className="Header-menu">
+                        {renderMenuItems()}
+                    </ul>
+                </div>
             </div>
-            <ul className="Header-menu">
-                {renderMenuItems()}
-            </ul>
         </header>
     );
-};
-
-Header.propTypes = {
-
 };
 
 export default Header;

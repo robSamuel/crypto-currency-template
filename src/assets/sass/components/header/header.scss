@@ -6,6 +6,19 @@
     padding: 1rem;
     position: relative;
 
+    &-logo {
+        color: $white;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
     &-menu {
         margin: 0;
         padding: 0;
