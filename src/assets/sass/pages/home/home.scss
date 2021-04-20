@@ -1,17 +1,11 @@
 .Home {
     &-introduction {
+        display: flex;
+        align-items: center;
         background-image: url("/assets/images/introduction-background.jpg");
         background-position: center center;
         background-size: cover;
         height: 750px;
         width: 100%;
-    }
-
-    &-intro-content {
-        color: $white;
-    }
-
-    &-intro-btns {
-
     }
 }
