@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Icons = ({ iconName }) => {
+const Icons = ({ classes, iconName }) => {
     const getIcon = () => {
         let iconType = '';
 
@@ -19,7 +19,7 @@ const Icons = ({ iconName }) => {
     };
 
     return (
-        <i className={getIcon()} />
+        <i className={`${classes} ${getIcon()}`} />
     );
 };
 

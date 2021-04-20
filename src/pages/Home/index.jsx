@@ -15,9 +15,13 @@ const Home = props => {
                             <div className="margin-top-20">
                                 <CustomButton
                                     classes="margin-right-20"
+                                    icon="reload"
                                     text="Sign Up"
                                 />
-                                <CustomButton text="Token Sale" />
+                                <CustomButton
+                                    icon="reload"
+                                    text="Token Sale"
+                                />
                             </div>
                         </div>
                     </div>
