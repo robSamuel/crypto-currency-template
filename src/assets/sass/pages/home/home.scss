@@ -28,12 +28,21 @@
     background-color: $aliceBlue;
     height: 340px;
 
+    @include media-breakpoint-down(sm) {
+        height: 600px;
+    }
+
     &-container {
         display: flex;
         align-items: center;
         background: $white;
         height: 140px;
         justify-content: center;
+
+        @include media-breakpoint-down(md) {
+            height: 105px;
+            margin: 10px 0;
+        }
     }
 
     &-icon {
@@ -55,5 +64,9 @@
         font-size: 18px;
         font-weight: 400;
         margin-top: 10px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+        }
     }
 }
