@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Helmet from 'react-helmet';
 import './assets/sass/main.scss';
 
 const App = () => {
@@ -22,7 +23,13 @@ const App = () => {
             <div>
               <Header />
               {getRoutes()}
-          </div>
+            </div>
+            <Helmet>
+            <script
+                src="https://kit.fontawesome.com/87131fda1b.js"
+                crossorigin="anonymous"
+            />
+      </Helmet>
         </BrowserRouter>
     );
 }
