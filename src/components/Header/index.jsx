@@ -74,28 +74,6 @@ const Header = props => {
         });
     };
 
-    // return (
-    //     <header className="Header">
-    //         <div className="container Header-container">
-    //             <Link
-    //                 className="Header-logo"
-    //                 to="/"
-    //             >
-    //                 Nafi
-    //             </Link>
-    //             <div className="Header-content">
-    //                 <ul className="Header-menu">
-    //                     {renderMenuItems()}
-    //                 </ul>
-    //                 <CustomButton
-    //                     classes="margin-left-10"
-    //                     text="Buy Token"
-    //                 />
-    //             </div>
-    //         </div>
-    //     </header>
-    // );
-
     return (
         <header className="Header">
             <div className="container">

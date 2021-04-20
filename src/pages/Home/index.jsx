@@ -31,10 +31,12 @@ const Home = () => {
             return (
                 <div className="col-lg-3 col-md-6 col-12">
                     <div className="HomeStatistics-container">
-                        <Icon
-                            classes="HomeStatistics-icon font-size-50"
-                            iconName={statistic.icon}
-                        />
+                        <div className="HomeStatistics-firstcol">
+                            <Icon
+                                classes="HomeStatistics-icon font-size-50"
+                                iconName={statistic.icon}
+                            />
+                        </div>
                         <div className="HomeStatistics-data">
                             <span className="HomeStatistics-amount">
                                 {statistic.amount}
@@ -51,12 +53,12 @@ const Home = () => {
 
     return (
         <div className="Home">
-            <section className="Home-introduction">
+            <section className="HomeIntroduction">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
-                            <h2 className="font-color-white font-size-45 font-weight-700">Crp Technology Blockchain Perfomer</h2>
-                            <p className="font-color-white font-size-18">
+                            <h2 className="HomeIntroduction-title font-color-white">Crp Technology Blockchain Perfomer</h2>
+                            <p className="HomeIntroduction-description font-color-white">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                             </p>
                             <div className="margin-top-20">
