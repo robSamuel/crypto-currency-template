@@ -35,7 +35,7 @@ const Icons = ({ classes, iconName }) => {
     };
 
     return (
-        <i className={`${classes} ${getIcon()}`} />
+        <i className={`${getIcon()} ${classes}`} />
     );
 };
 

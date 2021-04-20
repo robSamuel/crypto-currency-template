@@ -29,18 +29,20 @@ const Home = () => {
     const renderStatistics = () => {
         return STATISTICS.map(statistic => {
             return (
-                <div className="col-lg-3 col-md-6 col-12 Home-stat-container">
-                    <Icon
-                        classes="Home-stat-icon font-size-50"
-                        iconName={statistic.icon}
-                    />
-                    <div className="Home-stat-data">
-                        <span className="Home-stat-amount">
-                            {statistic.amount}
-                        </span>
-                        <span className="Home-stat-label">
-                            {statistic.label}
-                        </span>
+                <div className="col-lg-3 col-md-6 col-12">
+                    <div className="Home-stat-container">
+                        <Icon
+                            classes="Home-stat-icon font-size-50"
+                            iconName={statistic.icon}
+                        />
+                        <div className="Home-stat-data">
+                            <span className="Home-stat-amount">
+                                {statistic.amount}
+                            </span>
+                            <span className="Home-stat-label">
+                                {statistic.label}
+                            </span>
+                        </div>
                     </div>
                 </div>
             );
