@@ -8,4 +8,40 @@
         height: 750px;
         width: 100%;
     }
+
+    &-statistics {
+        display: flex;
+        align-items: center;
+        background-color: $aliceBlue;
+        height: 340px;
+    }
+
+    &-stat-container {
+        display: flex;
+        align-items: center;
+        background: $white;
+        height: 140px;
+        justify-content: center;
+    }
+
+    &-stat-icon {
+        color: $cornflowerBlue;
+    }
+
+    &-stat-data {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    &-stat-amount {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &-stat-label {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
 }

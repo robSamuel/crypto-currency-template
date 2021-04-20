@@ -1,7 +1,52 @@
 import React from 'react';
 import CustomButton from '../../components/Button';
+import Icon from '../../components/Icon';
 
-const Home = props => {
+const STATISTICS = [
+    {
+        icon: 'registered',
+        amount: 122500,
+        label: 'User Sign Up'
+    },
+    {
+        icon: 'world',
+        amount: 94500,
+        label: 'Country Support'
+    },
+    {
+        icon: 'monero',
+        amount: 7855500,
+        label: 'Average Invest'
+    },
+    {
+        icon: 'profit',
+        amount: 1285500,
+        label: 'Get Profit'
+    }
+]
+
+const Home = () => {
+    const renderStatistics = () => {
+        return STATISTICS.map(statistic => {
+            return (
+                <div className="col-lg-3 col-md-6 col-12 Home-stat-container">
+                    <Icon
+                        classes="Home-stat-icon font-size-50"
+                        iconName={statistic.icon}
+                    />
+                    <div className="Home-stat-data">
+                        <span className="Home-stat-amount">
+                            {statistic.amount}
+                        </span>
+                        <span className="Home-stat-label">
+                            {statistic.label}
+                        </span>
+                    </div>
+                </div>
+            );
+        })
+    }
+
     return (
         <div className="Home">
             <section className="Home-introduction">
@@ -24,6 +69,13 @@ const Home = props => {
                                 />
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="Home-statistics">
+                <div className="container">
+                    <div className="row">
+                        {renderStatistics()}
                     </div>
                 </div>
             </section>
