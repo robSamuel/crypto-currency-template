@@ -6,8 +6,20 @@ const Icons = ({ classes, iconName }) => {
         let iconType = '';
 
         switch(iconName) {
+            case 'award':
+                iconType = 'fas fa-award';
+                break;
+
+            case 'invoice':
+                iconType = 'fas fa-file-invoice-dollar';
+                break;
+
             case 'monero':
                 iconType = 'fab fa-monero';
+                break;
+
+            case 'passport':
+                iconType = 'fas fa-passport';
                 break;
 
             case 'profit':
@@ -46,7 +58,10 @@ Icons.defaultProps = {
 Icons.propTypes = {
     classes: PropTypes.string,
     iconName: PropTypes.oneOf([
+        'award',
+        'invoice',
         'monero',
+        'passport',
         'profit',
         'registered',
         'reload',

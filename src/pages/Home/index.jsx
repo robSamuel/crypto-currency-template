@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../About';
 import CustomButton from '../../components/Button';
 import Icon from '../../components/Icon';
 
@@ -52,7 +53,7 @@ const Home = () => {
     }
 
     return (
-        <div className="Home">
+        <div id="Home">
             <section className="HomeIntroduction">
                 <div className="container">
                     <div className="row">
@@ -83,6 +84,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <About />
         </div>
     );
 };
