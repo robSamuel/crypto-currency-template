@@ -7,6 +7,18 @@
         background-size: cover;
         height: 750px;
         width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            height: 700px;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 540px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 400px;
+        }
     }
 
     &-statistics {
