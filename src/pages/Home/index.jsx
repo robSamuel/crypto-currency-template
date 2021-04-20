@@ -30,16 +30,16 @@ const Home = () => {
         return STATISTICS.map(statistic => {
             return (
                 <div className="col-lg-3 col-md-6 col-12">
-                    <div className="Home-stat-container">
+                    <div className="HomeStatistics-container">
                         <Icon
-                            classes="Home-stat-icon font-size-50"
+                            classes="HomeStatistics-icon font-size-50"
                             iconName={statistic.icon}
                         />
-                        <div className="Home-stat-data">
-                            <span className="Home-stat-amount">
+                        <div className="HomeStatistics-data">
+                            <span className="HomeStatistics-amount">
                                 {statistic.amount}
                             </span>
-                            <span className="Home-stat-label">
+                            <span className="HomeStatistics-label">
                                 {statistic.label}
                             </span>
                         </div>
@@ -74,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="Home-statistics">
+            <section className="HomeStatistics">
                 <div className="container">
                     <div className="row">
                         {renderStatistics()}
