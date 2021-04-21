@@ -1,7 +1,64 @@
 .About {
+    align-items: center;
+    display: flex;
     height: 715px;
 
+    &-welcome {
+        color: $cornflowerBlue;
+        font-weight: 600;
+    }
+
+    &-title {
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    &-paragraph {
+
+    }
+
+    &-item {
+        align-items: center;
+        display: flex;
+        height: 85px;
+        width: 70%;
+    }
+
+    &-firstcol {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 15%;
+    }
+
+    &-icon {
+        font-size: 35px;
+    }
+
+    &-data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
+    }
+
     &-image {
-        height: 440px;
+        height: 540px;
+        width: 540px;
     }
 }
