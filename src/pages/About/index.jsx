@@ -61,7 +61,7 @@ const About = () => {
                         <div className="col-lg-5 col-xl-6 col-12 margin-auto">
                             <div className="About-seccol">
                                 <img
-                                    className="About-image"
+                                    className="w-100"
                                     src={welcomeImage}
                                     alt=""
                                 />

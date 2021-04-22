@@ -32,7 +32,7 @@ const Home = () => {
         return STATISTICS.map(statistic => {
             return (
                 <div className="col-lg-3 col-md-6 col-12">
-                    <div className="HomeStatistics-container">
+                    <div className="shadow-sm bg-white  HomeStatistics-container">
                         <div className="HomeStatistics-firstcol">
                             <Icon
                                 classes="HomeStatistics-icon font-size-50"

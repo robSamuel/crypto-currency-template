@@ -62,19 +62,4 @@
         justify-content: center;
         margin: 10px 0;
     }
-
-    &-image {
-        height: 540px;
-        width: 540px;
-
-        @include media-breakpoint-down(md) {
-            height: 626px;
-            width: 626px;
-        }
-
-        @include media-breakpoint-down(sm) {
-            height: 100%;
-            width: 100%; 
-        }
-    }
 }

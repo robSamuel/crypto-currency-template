@@ -32,15 +32,15 @@ const Feature = () => {
     const renderItems = () => {
         return CARDS.map(card => {
             return (
-                <div className="FeatureCard">
-                    <div className="FeatureCard-firstrow">
+                <div className="shadow-sm mb-5 bg-white FeatureCard">
+                    <div className="mb-3">
                         <Icon
                             classes="FeatureCard-icon"
                             iconName={card.icon}
                         />
                     </div>
-                    <div className="FeatureCard-secondrow">
-                        <span className="FeatureCard-label">
+                    <div className="d-flex flex-column">
+                        <span className="FeatureCard-label mb-2">
                             {card.label}
                         </span>
                         <p className="FeatureCard-text">
@@ -56,21 +56,21 @@ const Feature = () => {
         <section className="Feature">
             <div className="container">
                 <div className="row">
-                    <div>
-                        <div>
+                    <div className="col-lg-6 col-md-6">
+                        <div className="Feature-first">
                             <span className="Feature-welcome">
                                 Our Amazing Feature
                             </span>
                             <h2 className="Feature-title">
                                 Why Should You Invest
                             </h2>
-                            <p>
+                            <p className="Feature-text">
                                 Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit ipsum dolor sit amet.
                             </p>
                         </div>
                     </div>
                     <div>
-                        <div className="Feature-seccontainer">
+                        <div className="Feature-second">
                             {renderItems()}
                         </div>
                     </div>
