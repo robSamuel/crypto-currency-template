@@ -3,6 +3,10 @@
     display: flex;
     height: 715px;
 
+    @include media-breakpoint-down(md) {
+        height: 1200px;
+    }
+
     &-welcome {
         color: $cornflowerBlue;
         font-weight: 600;
@@ -13,10 +17,6 @@
         margin-bottom: 20px;
         margin-top: 10px;
         text-transform: uppercase;
-    }
-
-    &-paragraph {
-
     }
 
     &-item {
@@ -57,8 +57,24 @@
         }
     }
 
+    &-seccol {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
     &-image {
         height: 540px;
         width: 540px;
+
+        @include media-breakpoint-down(md) {
+            height: 626px;
+            width: 626px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 100%;
+            width: 100%; 
+        }
     }
 }

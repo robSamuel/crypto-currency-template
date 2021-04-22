@@ -59,11 +59,13 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-lg-5 col-xl-6 col-12 margin-auto">
-                            <img
-                                className="About-image"
-                                src={welcomeImage}
-                                alt=""
-                            />
+                            <div className="About-seccol">
+                                <img
+                                    className="About-image"
+                                    src={welcomeImage}
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
