@@ -1,0 +1,52 @@
+.Feature {
+    background-color: $light-gray;
+    height: 930px;
+    padding: 100px 0;
+
+    &-seccontainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-welcome {
+        color: $cornflowerBlue;
+        font-weight: 600;
+    }
+
+    &-title {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.FeatureCard {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    margin: 15px;
+    padding: 30px 20px;
+    width: 350px;
+
+    &-firstrow {
+
+    }
+
+    &-icon {
+        color: $cornflowerBlue;
+        font-size: 45px;
+    }
+
+    &-secondrow {
+
+    }
+
+    &-label {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &-text {
+
+    }
+}

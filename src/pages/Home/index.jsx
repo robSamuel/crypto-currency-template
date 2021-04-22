@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../About';
 import CustomButton from '../../components/Button';
+import Feature from '../Feature';
 import Icon from '../../components/Icon';
 
 const STATISTICS = [
@@ -85,6 +86,7 @@ const Home = () => {
                 </div>
             </section>
             <About />
+            <Feature />
         </div>
     );
 };

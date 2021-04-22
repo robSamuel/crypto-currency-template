@@ -6,12 +6,32 @@ const Icons = ({ classes, iconName }) => {
         let iconType = '';
 
         switch(iconName) {
+            case 'anchor':
+                iconType = 'fas fa-anchor';
+                break;
+
             case 'award':
                 iconType = 'fas fa-award';
                 break;
 
+            case 'credit-card':
+                iconType = 'far fa-credit-card';
+                break;
+
             case 'invoice':
                 iconType = 'fas fa-file-invoice-dollar';
+                break;
+
+            case 'lock':
+                iconType = 'fas fa-lock';
+                break;
+
+            case 'mail-bulk':
+                iconType = 'fas fa-mail-bulk';
+                break;
+
+            case 'mobile':
+                iconType = 'fas fa-mobile-alt';
                 break;
 
             case 'monero':
@@ -32,6 +52,10 @@ const Icons = ({ classes, iconName }) => {
 
             case 'reload':
                 iconType = 'fas fa-sync-alt';
+                break;
+
+            case 'shield':
+                iconType = 'fas fa-shield-alt';
                 break;
 
             case 'world':
@@ -58,13 +82,19 @@ Icons.defaultProps = {
 Icons.propTypes = {
     classes: PropTypes.string,
     iconName: PropTypes.oneOf([
+        'anchor',
         'award',
+        'credit-card',
         'invoice',
+        'lock',
+        'mail-bulk',
+        'mobile',
         'monero',
         'passport',
         'profit',
         'registered',
         'reload',
+        'shield',
         'world'
     ])
 };
