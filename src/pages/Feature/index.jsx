@@ -32,7 +32,7 @@ const Feature = () => {
     const renderItems = () => {
         return CARDS.map(card => {
             return (
-                <div className="shadow-sm mb-5 bg-white FeatureCard">
+                <div className="shadow-sm bg-white FeatureCard">
                     <div className="mb-3">
                         <Icon
                             classes="FeatureCard-icon"
