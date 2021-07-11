@@ -2,7 +2,7 @@
     Crypto Currency Template
 </h1>
 
-**About this project:**
+## About this project:
 
 This project is a React version of the following template:
 https://themesfamily.com/tm/nafi/
